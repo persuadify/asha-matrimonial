@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-<?php
+
 require '../config/db.php';
 $name=$_POST['name'] ?? '';
 $email=$_POST['email'] ?? '';
