@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
-$user = "tuxcepgg_ashauser";          // ✅ EXACT from cPanel
-$pass = "9$x,VB}eFkb,";  // ✅ wahi password jo MySQL Users me hai
+$user = "tuxcepgg_ashauser";
+$pass = "9$x,VB}eFkb,";
 $db   = "tuxcepgg_ashamatrimonial";
 $socket = "/var/lib/mysql/mysql.sock";
 
