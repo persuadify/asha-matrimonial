@@ -1,0 +1,26 @@
+CREATE DATABASE asha_matrimonial;
+USE asha_matrimonial;
+
+CREATE TABLE users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(100) UNIQUE,
+password VARCHAR(255),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE interests(
+id INT AUTO_INCREMENT PRIMARY KEY,
+from_user INT,
+to_user INT,
+status VARCHAR(20),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE chats(
+id INT AUTO_INCREMENT PRIMARY KEY,
+from_user INT,
+to_user INT,
+message TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
