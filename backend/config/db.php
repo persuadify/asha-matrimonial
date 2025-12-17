@@ -1,9 +1,9 @@
 <?php
 $host = "localhost";
-$user = "tuxcepgg_asha_live";   // exact user
-$pass = "Asha@Live#2025";    // exact password
+$user = "tuxcepgg_ashauser";          // ✅ EXACT from cPanel
+$pass = "9$x,VB}eFkb,";  // ✅ wahi password jo MySQL Users me hai
 $db   = "tuxcepgg_ashamatrimonial";
-$socket = "/var/lib/mysql/mysql.sock"; // MOST IMPORTANT
+$socket = "/var/lib/mysql/mysql.sock";
 
 $conn = new mysqli($host, $user, $pass, $db, null, $socket);
 
