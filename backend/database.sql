@@ -1,4 +1,4 @@
-CREATE DATABASE asha_matrimonial;
+
 USE asha_matrimonial;
 
 CREATE TABLE users(
