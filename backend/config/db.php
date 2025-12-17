@@ -1,13 +1,12 @@
 <?php
-$host = "localhost";
-$user = "tuxcepgg_ashauser";
-$pass = "9$x,VB}eFkb,";
-$db   = "tuxcepgg_ashamatrimonial";
-$socket = "/var/lib/mysql/mysql.sock";
+$conn = mysqli_connect(
+    "localhost",
+    "tuxcepqg_ashauser",
+    "Asha@2025StrongDB#",
+    "tuxcepqg_ashamatrimonial"
+);
 
-$conn = new mysqli($host, $user, $pass, $db, null, $socket);
-
-if ($conn->connect_error) {
-    die("DB CONNECTION FAILED: " . $conn->connect_error);
+if (!$conn) {
+    die("DB ERROR: " . mysqli_connect_error());
 }
 ?>
